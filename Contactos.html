@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive</title>
+    <link rel="stylesheet" type="text/css" href="styles_responsive.css">
+</head>
+<body>
+    <div class="container"> <!-- Contêiner geral da página -->
+    <header> <!-- Cabeçalho fixo no topo -->
+        <span><img src="imgs/google.png" class="logo"></span> <!-- Espaço reservado para o logotipo -->
+        <label for="menuToggle">☰ Menu</label> <!-- Ícone do menu (hambúrguer) visível no mobile -->
+        <input type="checkbox" id="menuToggle"> 
+        <!-- Checkbox invisível que controla a abertura/fecho do menu lateral -->
+        <nav> <!-- Menu lateral deslizante -->
+            <label for="menuToggle" class="close">✖</label> <!-- Botão de fechar o menu -->
+            <a href="Home.html">Home</a> <!-- Link do menu -->
+            <a href="Sobre.html">Sobre</a>
+            <a href="Serviços.html">Serviços</a>
+            <a href="Contactos.html">Contactos</a>
+        </nav>
+        <div class="overlay" onclick="document.getElementById('menuToggle').checked=false"></div> 
+        <!-- Camada escura que aparece atrás do menu quando ele está aberto -->
+    </header>
+    <main> <!-- Área principal da página -->
+        <div class="maincontent"> <!-- Conteúdo principal -->
+            <h2>Entra em Contacto Connosco</h2></br>
+            <p>Se tiveres dúvidas, sugestões ou quiseres saber mais sobre os conteúdos apresentados neste site, estamos disponíveis para ajudar. O objetivo desta página é facilitar a comunicação e permitir que partilhes a tua opinião, coloques questões ou envies comentários sobre o projeto.
+            </p></br>
+            <p>Preenche o formulário ao lado com o teu nome, email e mensagem, e responderemos assim que possível. A tua participação é importante para melhorar continuamente a qualidade da informação e garantir que o conteúdo permanece claro, útil e acessível para todos os utilizadores.
+            </p></br>
+            <p>Agradecemos o teu contacto e o interesse em explorar este espaço dedicado ao universo Google.</p>
+        </div>
+    <aside class="sidebar">
+        <h3>📨 Fala connosco</h3></br>
+        <form action="/submeter" method="post" class="form-sidebar">
+            <table>
+            <tr>
+                <th><label for="nome">Nome Completo</label></th>
+                <td><input id="nome" name="nome" type="text" required></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <td><input id="email" name="email" type="email" placeholder="O teu email" required></td>
+            </tr>
+            <tr>
+                <th><label for="mensagem">Mensagem</label></th>
+                <td><textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreve a tua mensagem..." required></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="mensagem" mensagem></label></th>
+                <td style="text-align: left;">
+                    <button type="reset">Limpar</button>&nbsp;
+                    <button type="submit">Enviar</button>
+                </td>
+            </tr>
+            </table>
+        </form>
+    </aside>
+    </main>
+    <footer>© Projeto educativo independente sobre o <a href="https://Google.com" target="_blank">Google</a>
+    </footer> <!-- Rodapé da página -->
+    </div>
+</body>
+
+</html>
