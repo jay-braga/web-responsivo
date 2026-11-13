@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive</title>
+    <link rel="stylesheet" type="text/css" href="styles_responsive.css">
+</head>
+<body>
+    <div class="container"> <!-- Contêiner geral da página -->
+    <header> <!-- Cabeçalho fixo no topo -->
+        <span><img src="imgs/google.png" class="logo"></span> <!-- Espaço reservado para o logotipo -->
+        <label for="menuToggle">☰ Menu</label> <!-- Ícone do menu (hambúrguer) visível no mobile -->
+        <input type="checkbox" id="menuToggle"> 
+        <!-- Checkbox invisível que controla a abertura/fecho do menu lateral -->
+        <nav> <!-- Menu lateral deslizante -->
+            <label for="menuToggle" class="close">✖</label> <!-- Botão de fechar o menu -->
+            <a href="Home.html">Home</a> <!-- Link do menu -->
+            <a href="Sobre.html">Sobre</a>
+            <a href="Serviços.html">Serviços</a>
+            <a href="Contactos.html">Contactos</a>
+        </nav>
+        <div class="overlay" onclick="document.getElementById('menuToggle').checked=false"></div> 
+        <!-- Camada escura que aparece atrás do menu quando ele está aberto -->
+    </header>
+    <main> <!-- Área principal da página -->
+        <div class="maincontent"> <!-- Conteúdo principal -->
+            <h2>A Historia e Evolução do Google</h2></br>
+            <p>O Google foi fundado em 1998 por Larry Page e Sergey Brin, dois estudantes da Universidade de Stanford que tinham como objetivo organizar a imensa quantidade de informação disponível na internet. O projeto começou como um motor de busca inovador, capaz de apresentar resultados mais relevantes através de um algoritmo chamado PageRank.
+            </p></br>
+            <p>Ao longo dos anos, o Google transformou-se numa das maiores empresas de tecnologia do mundo, expandindo-se para áreas como comunicação, mapas, armazenamento em nuvem, inteligência artificial, sistemas operativos e muito mais. Produtos como Gmail, Google Maps, YouTube, Android e Google Drive tornaram-se ferramentas essenciais no dia a dia de milhões de pessoas.
+            </p></br>
+            <p>A missão do Google — “organizar a informação do mundo e torná‑la universalmente acessível e útil” — continua a guiar o desenvolvimento de novas tecnologias e serviços. A empresa investe constantemente em inovação, pesquisa e soluções que facilitam a vida digital, promovem o acesso ao conhecimento e impulsionam o futuro da tecnologia.
+            </br>Esta página tem como objetivo apresentar a história, evolução e impacto global do Google, oferecendo uma visão clara sobre como a empresa cresceu e se tornou uma referência mundial no setor tecnológico.</p>
+        </div>
+        <aside class="sidebar">
+            <h3>🌍 A evolução do Google</h3></br>
+            <p>Ao longo das últimas décadas, o Google deixou de ser apenas um motor de busca para se tornar um ecossistema tecnológico global. A empresa expandiu-se para áreas como inteligência artificial, mobilidade, computação em nuvem e soluções que moldam o futuro digital.</p></br>
+            <p>Hoje, o Google influencia a forma como estudamos, trabalhamos e comunicamos, oferecendo ferramentas que conectam pessoas e facilitam o acesso ao conhecimento. A sua capacidade de inovação contínua é um dos fatores que a transformou numa referência mundial no setor tecnológico.</p></br>
+        </aside> 
+        <!-- Barra lateral fixa ou responsiva, dependendo do CSS -->
+    </main>
+    <footer>© Projeto educativo independente sobre o <a href="https://Google.com" target="_blank">Google</a> 
+    </footer> <!-- Rodapé da página -->
+    </div>
+</body>
+
+</html>
