@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive</title>
+    <link rel="stylesheet" type="text/css" href="styles_responsive.css">
+</head>
+<body>
+    <div class="container"> <!-- Contêiner geral da página -->
+    <header> <!-- Cabeçalho fixo no topo -->
+        <span><img src="imgs/google.png" class="logo"></span> <!-- Espaço reservado para o logotipo -->
+        <label for="menuToggle">☰ Menu</label> <!-- Ícone do menu (hambúrguer) visível no mobile -->
+        <input type="checkbox" id="menuToggle"> 
+        <!-- Checkbox invisível que controla a abertura/fecho do menu lateral -->
+        <nav> <!-- Menu lateral deslizante -->
+            <label for="menuToggle" class="close">✖</label> <!-- Botão de fechar o menu -->
+            <a href="Home.html">Home</a> <!-- Link do menu -->
+            <a href="Sobre.html">Sobre</a>
+            <a href="Serviços.html">Serviços</a>
+            <a href="Contactos.html">Contactos</a>
+        </nav>
+        <div class="overlay" onclick="document.getElementById('menuToggle').checked=false"></div> 
+        <!-- Camada escura que aparece atrás do menu quando ele está aberto -->
+    </header>
+    <main> <!-- Área principal da página -->
+        <div class="maincontent"> <!-- Conteúdo principal -->
+            <h2>Os Principais Serviços do Google</h2></br>
+            <p>O Google oferece uma vasta gama de serviços que se tornaram essenciais no dia a dia de milhões de utilizadores em todo o mundo. O que começou como um simples motor de busca evoluiu para um conjunto de ferramentas integradas que facilitam a comunicação, a produtividade, a navegação e o acesso à informação.</p></br>
+            <p>Entre os serviços mais conhecidos estão o Gmail, uma das plataformas de e‑mail mais utilizadas do planeta; o Google Maps, que revolucionou a forma como nos orientamos e exploramos o mundo; e o Google Drive, que permite armazenar, partilhar e editar ficheiros na nuvem de forma simples e segura.
+            </p>
+            <p>O YouTube, também pertencente ao Google, tornou-se a maior plataforma de vídeos do mundo, influenciando a educação, o entretenimento e a comunicação digital. Já o Android, sistema operativo desenvolvido pela empresa, está presente na maioria dos smartphones, tornando o ecossistema Google ainda mais acessível.</p></br>
+            <p>Além disso, o Google investe continuamente em inteligência artificial, computação em nuvem e ferramentas de produtividade, como o Google Docs, Sheets e Meet, que permitem trabalhar e colaborar a partir de qualquer lugar.</p>
+            <p>Estes serviços, quando utilizados em conjunto, criam um ecossistema eficiente, intuitivo e conectado, que acompanha o utilizador em todas as áreas da vida digital — desde estudar e trabalhar até viajar, comunicar e explorar novos conhecimentos.</p>
+        </div>
+        <aside class="sidebar">
+            <h3>⚙️ O impacto dos serviços Google</h3></br>
+            <p>Os serviços do Google foram desenvolvidos para simplificar tarefas do quotidiano e tornar a informação mais acessível. Desde ferramentas de comunicação, como o Gmail, até plataformas de navegação e produtividade, como o Maps e o Drive, cada serviço foi pensado para resolver necessidades reais de milhões de utilizadores.</p></br>
+            <p>A integração entre estas ferramentas cria um ecossistema eficiente, onde tudo funciona de forma conectada. Esta abordagem permite ao Google oferecer soluções rápidas, intuitivas e disponíveis em qualquer dispositivo, reforçando o seu papel como líder global em tecnologia.</p></br>
+            </aside> 
+        <!-- Barra lateral fixa ou responsiva, dependendo do CSS -->
+    </main>
+    <footer>© Projeto educativo independente sobre o <a href="https://Google.com" target="_blank">Google</a></footer> <!-- Rodapé da página -->
+    </div>
+</body>
+
+</html>
