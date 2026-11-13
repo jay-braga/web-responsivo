@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive</title>
+    <link rel="stylesheet" type="text/css" href="styles_responsive.css">
+</head>
+<body>
+    <div class="container"> <!-- Contêiner geral da página -->
+    <header> <!-- Cabeçalho fixo no topo -->
+        <span><img src="imgs/google.png" class="logo"></span> <!-- Espaço reservado para o logotipo -->
+        <label for="menuToggle">☰ Menu</label> <!-- Ícone do menu (hambúrguer) visível no mobile -->
+        <input type="checkbox" id="menuToggle"> 
+        <!-- Checkbox invisível que controla a abertura/fecho do menu lateral -->
+        <nav> <!-- Menu lateral deslizante -->
+            <label for="menuToggle" class="close">✖</label> <!-- Botão de fechar o menu -->
+            <a href="Home.html">Home</a> <!-- Link do menu -->
+            <a href="Sobre.html">Sobre</a>
+            <a href="Serviços.html">Serviços</a>
+            <a href="Contactos.html">Contactos</a>
+        </nav>
+        <div class="overlay" onclick="document.getElementById('menuToggle').checked=false"></div> 
+        <!-- Camada escura que aparece atrás do menu quando ele está aberto -->
+    </header>
+    <main> <!-- Área principal da página -->
+        <div class="maincontent"> <!-- Conteúdo principal -->
+            <h2>Home</h2></br>
+            <p>O Google é uma das maiores empresas de tecnologia do mundo, conhecida por transformar a forma como pesquisamos, comunicamos e acedemos à informação. Aqui encontrarás uma visão geral dos seus produtos, história e impacto global.</p></br>
+            <p>Desde o seu início como um simples motor de busca, o Google evoluiu para um ecossistema completo de ferramentas que fazem parte do quotidiano de milhões de pessoas. Serviços como o Gmail, Google Maps, YouTube e Google Drive tornaram-se essenciais para estudar, trabalhar e comunicar.
+            </p>
+            <p>A empresa também se destaca pela inovação constante, investindo em inteligência artificial, computação em nuvem, dispositivos móveis e soluções que facilitam a vida digital.</p></br>
+            <p>O objetivo do Google sempre foi organizar a informação do mundo e torná‑la universalmente acessível — uma missão que continua a guiar o desenvolvimento de novas tecnologias.</p>
+            <p>Nesta página, poderás explorar como o Google cresceu, quais os seus principais produtos e de que forma influencia a tecnologia moderna. É um espaço dedicado a compreender a evolução desta gigante tecnológica e o seu papel no futuro digital.</p></br>
+        </div>
+        <aside class="sidebar">
+            <h3>💡 Curiosidades sobre o Google</h3>
+            <ul class="curiosidades">
+                <li>O nome “Google” vem de “googol”, um número enorme.</li>
+                <li>O primeiro servidor foi construído com peças de LEGO.</li>
+                <li>Todos os dias são feitas bilhões de pesquisas.</li>
+                <li>O Google muda o logótipo em datas especiais (Google Doodles).</li>
+            </ul>
+        </aside> 
+        <!-- Barra lateral fixa ou responsiva, dependendo do CSS -->
+    </main>
+    <footer>© Projeto educativo independente sobre o <a href="https://Google.com" target="_blank">Google</a></footer> <!-- Rodapé da página -->
+    </div>
+</body>
+
+</html>
